@@ -16,6 +16,7 @@ gem 'foreigner'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'devise'
+gem 'mini_magick'
 
 
 # Gems used only for assets and not required
