@@ -13,6 +13,8 @@ group :production do
 end
 gem 'carrierwave'
 gem 'foreigner'
+gem 'geocoder'
+gem 'gmaps4rails'
 
 
 # Gems used only for assets and not required

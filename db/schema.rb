@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121201154835) do
+ActiveRecord::Schema.define(:version => 20121201164033) do
+
+  create_table "attendees", :force => true do |t|
+    t.string   "name"
+    t.string   "twitter_handle"
+    t.text     "bio"
+    t.text     "address"
+    t.string   "picture"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.float    "latitude"
+    t.float    "longitude"
+  end
 
   create_table "comments", :force => true do |t|
     t.string   "user_name"
