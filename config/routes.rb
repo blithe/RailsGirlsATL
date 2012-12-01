@@ -1,4 +1,6 @@
 Railsgirls::Application.routes.draw do
+  devise_for :users
+
   resources :attendees
 
   resources :comments
@@ -6,6 +8,7 @@ Railsgirls::Application.routes.draw do
   resources :ideas
 
   root :to => redirect('/ideas')
+  # match "/index" => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

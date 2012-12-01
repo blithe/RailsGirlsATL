@@ -15,6 +15,7 @@ gem 'carrierwave'
 gem 'foreigner'
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'devise'
 
 
 # Gems used only for assets and not required
