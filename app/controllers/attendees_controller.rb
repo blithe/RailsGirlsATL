@@ -3,6 +3,7 @@ class AttendeesController < ApplicationController
   # GET /attendees.json
   def index
     @attendees = Attendee.all
+    @pins = @attendees.to_gmaps4rails
 
     respond_to do |format|
       format.html # index.html.erb

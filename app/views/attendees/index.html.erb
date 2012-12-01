@@ -26,6 +26,10 @@
 <% end %>
 </table>
 
+<br/> 
+<%= gmaps4rails(@pins) %> 
+<%= yield :scripts %>
+
 <br />
 
 <%= link_to 'New Attendee', new_attendee_path %>
